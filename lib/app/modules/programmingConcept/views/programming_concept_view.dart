@@ -100,7 +100,7 @@ class ProgrammingConceptView extends GetView<ProgrammingConceptController> {
       );
     } else {
       return Text(
-        'Index $index is out of bounds',
+        'Index $index is out of founds',
         style: TextStyle(fontSize: 18.sp, color: Colors.red),
       );
     }
