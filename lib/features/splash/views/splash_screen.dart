@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../config/color.dart';
-import '../controllers/splash_controller.dart';
+import 'package:useable_and_readable/app/config/app_colors.dart';
+import 'package:useable_and_readable/features/splash/controllers/splash_controller.dart';
 
 class SplashScreen extends GetView<SplashController> {
   const SplashScreen({Key? key}) : super(key: key);

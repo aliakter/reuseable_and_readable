@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:useable_and_readable/app/common_widget/custom_appbar.dart';
+import 'package:useable_and_readable/widgets/custom_appbar.dart';
 import '../controllers/programming_concept_controller.dart';
 
 class ProgrammingConceptView extends GetView<ProgrammingConceptController> {
   const ProgrammingConceptView({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60.h),
-        child: const CustomAppBar(
-          title: 'Programming Concept',
-        ),
+        child: const CustomAppBar(title: 'Programming Concept'),
       ),
       body: SizedBox(
         child: Padding(

@@ -3,13 +3,13 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:useable_and_readable/app/config/color.dart';
-import '../../../common_widget/custom_appbar.dart';
-import '../../../routes/routes.dart';
+import 'package:useable_and_readable/app/config/app_colors.dart';
+import 'package:useable_and_readable/widgets/custom_appbar.dart';
 import '../controllers/text_design_controller.dart';
 
 class TextDesignScreen extends GetView<TextDesignController> {
   const TextDesignScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     TextDesignController textDesignController = TextDesignController();
@@ -17,9 +17,7 @@ class TextDesignScreen extends GetView<TextDesignController> {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60.h),
-        child: const CustomAppBar(
-          title: 'All Text Design',
-        ),
+        child: const CustomAppBar(title: 'All Text Design'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -30,9 +28,7 @@ class TextDesignScreen extends GetView<TextDesignController> {
             children: [
               Text(
                 'Text',
-                style: TextStyle(
-                  fontSize: 20.sp,
-                ),
+                style: TextStyle(fontSize: 20.sp),
               ),
               SizedBox(height: 10.h),
               RichText(
@@ -61,24 +57,17 @@ class TextDesignScreen extends GetView<TextDesignController> {
                   children: [
                     TextSpan(
                       text: 'Click ',
-                      style: TextStyle(
-                        fontSize: 25.sp,
-                      ),
+                      style: TextStyle(fontSize: 25.sp),
                     ),
                     WidgetSpan(
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 5.w),
-                        child: const Icon(
-                          Icons.add,
-                          color: Colors.red,
-                        ),
+                        child: const Icon(Icons.add, color: Colors.red),
                       ),
                     ),
                     TextSpan(
                       text: ' to add',
-                      style: TextStyle(
-                        fontSize: 25.sp,
-                      ),
+                      style: TextStyle(fontSize: 25.sp),
                     ),
                   ],
                 ),

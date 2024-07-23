@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../config/color.dart';
+import 'package:useable_and_readable/app/config/app_colors.dart';
 
 class CustomAppBar extends StatelessWidget {
   final IconButton? icon;

@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:useable_and_readable/app/common_widget/custom_appbar.dart';
-import 'package:useable_and_readable/app/config/color.dart';
-import 'package:useable_and_readable/app/modules/container/controller/container_controller.dart';
+import 'package:useable_and_readable/app/config/app_colors.dart';
+import 'package:useable_and_readable/features/container/controller/container_controller.dart';
+import 'package:useable_and_readable/widgets/custom_appbar.dart';
 
 class ContainerScreen extends GetView<ContainerController> {
   const ContainerScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60.h),
-        child: const CustomAppBar(
-          title: 'Container',
-        ),
+        child: const CustomAppBar(title: 'Container'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -65,10 +64,7 @@ class ContainerScreen extends GetView<ContainerController> {
                   ),
                   child: Text(
                     'A',
-                    style: TextStyle(
-                      fontSize: 180.sp,
-                      color: Colors.orange,
-                    ),
+                    style: TextStyle(fontSize: 180.sp, color: Colors.orange),
                   ),
                 ),
               ),
@@ -78,9 +74,7 @@ class ContainerScreen extends GetView<ContainerController> {
                   height: 200.h,
                   width: 200.h,
                   decoration: const BoxDecoration(
-                    color: Colors.purpleAccent,
-                    shape: BoxShape.circle,
-                  ),
+                      color: Colors.purpleAccent, shape: BoxShape.circle),
                 ),
               ),
               SizedBox(height: 20.h),
@@ -93,10 +87,7 @@ class ContainerScreen extends GetView<ContainerController> {
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight,
                     stops: [0.25, 0.90],
-                    colors: [
-                      AppColors.red12Color,
-                      AppColors.red13Color,
-                    ],
+                    colors: [AppColors.red12Color, AppColors.red13Color],
                   ),
                   boxShadow: [
                     BoxShadow(
@@ -124,22 +115,14 @@ class ContainerScreen extends GetView<ContainerController> {
                 decoration: BoxDecoration(
                   color: AppColors.bgColor,
                   borderRadius: BorderRadius.circular(10.r),
-                  border: Border.all(
-                    color: AppColors.redColor,
-                    width: 2.0,
-                  ),
-                  gradient: const LinearGradient(colors: [
-                    AppColors.goldColor,
-                    AppColors.textColor,
-                  ]),
+                  border: Border.all(color: AppColors.redColor, width: 2.0),
+                  gradient: const LinearGradient(
+                      colors: [AppColors.goldColor, AppColors.textColor]),
                   boxShadow: const [
                     BoxShadow(
                       color: AppColors.grayColor,
                       blurRadius: 2.0,
-                      offset: Offset(
-                        2.0,
-                        2.0,
-                      ),
+                      offset: Offset(2.0, 2.0),
                     ),
                   ],
                 ),
@@ -165,10 +148,7 @@ class ContainerScreen extends GetView<ContainerController> {
                 ),
                 child: Text(
                   'I am a container',
-                  style: TextStyle(
-                    fontSize: 38.sp,
-                    color: Colors.white,
-                  ),
+                  style: TextStyle(fontSize: 38.sp, color: Colors.white),
                 ),
               ),
               SizedBox(height: 20.h),
@@ -193,10 +173,7 @@ class ContainerScreen extends GetView<ContainerController> {
                   ),
                   child: Text(
                     'Challenge',
-                    style: TextStyle(
-                      fontSize: 32.sp,
-                      color: Colors.white,
-                    ),
+                    style: TextStyle(fontSize: 32.sp, color: Colors.white),
                   ),
                 ),
               ),
@@ -214,10 +191,7 @@ class ContainerScreen extends GetView<ContainerController> {
                 child: Center(
                   child: Text(
                     'I am a text',
-                    style: TextStyle(
-                      fontSize: 40.sp,
-                      color: Colors.white,
-                    ),
+                    style: TextStyle(fontSize: 40.sp, color: Colors.white),
                   ),
                 ),
               ),
@@ -236,10 +210,8 @@ class ContainerScreen extends GetView<ContainerController> {
                 child: Center(
                   child: Text(
                     'I am a text',
-                    style: TextStyle(
-                      fontSize: 40.sp,
-                      color: AppColors.whiteColor,
-                    ),
+                    style:
+                        TextStyle(fontSize: 40.sp, color: AppColors.whiteColor),
                   ),
                 ),
               ),
@@ -261,9 +233,7 @@ class ContainerScreen extends GetView<ContainerController> {
                   child: Text(
                     'I am a text',
                     style: TextStyle(
-                      fontSize: 40.sp,
-                      color: const Color(0xFF04589A),
-                    ),
+                        fontSize: 40.sp, color: const Color(0xFF04589A)),
                   ),
                 ),
               ),
@@ -313,10 +283,7 @@ class ContainerScreen extends GetView<ContainerController> {
                       begin: Alignment.bottomLeft,
                       end: Alignment.topRight,
                       stops: [0.3, 0.75],
-                      colors: [
-                        Color(0xFFba3660),
-                        Color(0xFF1C256E),
-                      ],
+                      colors: [Color(0xFFba3660), Color(0xFF1C256E)],
                     ),
                   ),
                 ),
