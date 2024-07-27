@@ -1,7 +1,7 @@
 name: useable_and_readable
 version: 1.0.0+1
 publish_to: none
-description: A new Flutter project.
+description: A new Flutter project
 environment: 
   sdk: '>=3.1.0 <4.0.0'
 
